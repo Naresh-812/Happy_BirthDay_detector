@@ -49,16 +49,6 @@ The number of detections is displayed on a **seven-segment display**, updated on
 | Display Update Rate | Display update frequency | 1 Hz |
 
 ---
-
-## 🧮 Math Behind the Logic
-
-\[
-f_{TX} = \frac{f_{CLK}}{N_{bits}} = \frac{10\,kHz}{10} = 1\,kHz
-\]
-\[
-T_{cycle} = \frac{2^{N_{counter}}}{f_{TX}} = \frac{1024}{1\,kHz} \approx 1.024\,s
-\]
-
 Thus, each full transmission cycle repeats approximately once per second.  
 A **1-second clock divider** (10,000 cycles @10kHz) is used for exact display updates.
 
